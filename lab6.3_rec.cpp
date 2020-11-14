@@ -7,7 +7,7 @@ using namespace std;
 void create(int* a, int Low, int Max, int N, int i);
 void print(int* a, int N, int i);
 template <typename T>
-T count1(T* a, T N, int i, T j);
+T count1(T* a, T N, int i, int j);
 int count2(int* a, int N, int i, int j);
 
 int main()
@@ -45,7 +45,7 @@ void print(int* a, int N, int i)
 	}
 }
 template <typename T>
-T count1(T* a, T N, int i, T j)          // <- спосіб з шаблоном
+T count1(T* a, T N, int i, int j)          // <- спосіб з шаблоном
 {
 	if (i < N)
 	{
